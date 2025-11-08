@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+/* Source files for Tailwind scanning */
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* FONT */
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+
+/* MODE TERANG */
+.body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.isi-berita {
+    color: #333;
+    line-height: 1.8;
+}
+
+/* MODE GELAP */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .card,
+.dark-mode .navbar,
+.dark-mode .form-control {
+    background-color: #1e1e1e;
+    color: #bb86fc;
+    border-color: #333;
+}
+
+.dark-mode .isi-berita {
+    color: #ffffff;
+}
+
+.dark-mode .ringkasan-berita {
+    color: #ffffff;
+}
+
+.dark-mode a {
+    color: #90caf9;
+}
+
+.dark-mode .text-muted {
+    color: #cccccc !important;
+}
+
+.dark-mode .section-berita {
+    background-color: #1e1e1e;
+}
+
+/* TRANSISI PERUBAHAN WARNA */
+.transition {
+    transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    border-color: #444 !important;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode 
+
+.dark-mode label {
+    color: #cccccc;
+}
